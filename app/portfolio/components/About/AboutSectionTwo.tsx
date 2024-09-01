@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { BackgroundGradient } from "../../../../../components/aceternity/GlowCard";
+import { BackgroundGradient } from "@/components/aceternity/GlowCard";
 
 const AboutSectionTwo = () => {
   return (
