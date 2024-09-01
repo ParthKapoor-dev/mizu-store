@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "@/components/aceternity/NavbarMenu";
 import { cn } from "@/lib/utils";
+import NavbarActions from "../navbar-actions";
+import ThemeToggler from "../ThemeToggler";
 
 
 export default function NavbarMenu({ className }: { className?: string }) {
@@ -44,21 +46,16 @@ export default function NavbarMenu({ className }: { className?: string }) {
                     </div>
                 </MenuItem>
 
-                <MenuItem href="/portfolio" setActive={setActive} active={active} item="Pricing">
-                    <div className="flex flex-col space-y-4 text-sm">
-                        <HoveredLink href="/hobby">Hobby</HoveredLink>
-                        <HoveredLink href="/individual">Individual</HoveredLink>
-                        <HoveredLink href="/team">Team</HoveredLink>
-                        <HoveredLink href="/enterprise">Enterprise</HoveredLink>
-                    </div>
-                </MenuItem>
-
                 <MenuItem href="/login" setActive={setActive} active={active} item="Login">
                     <div className="flex flex-col space-y-4 text-sm">
                         <HoveredLink href="/hobby">Registration</HoveredLink>
                         <HoveredLink href="/individual">Login</HoveredLink>
                     </div>
                 </MenuItem>
+
+                <ThemeToggler />
+
+                <NavbarActions/>
             </Menu>
         </div>
     );

@@ -73,14 +73,14 @@ export const Menu = ({
     return (
         <nav
             onMouseLeave={() => setActive(null)} // resets the state
-            className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-between items-center gap-32 space-x-4 px-8 py-6 text-xl max-md:text-sm max-md:gap-0 max-md:px-3 max-md:py-4"
+            className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] border-slate-300  bg-slate-100 shadow-input flex justify-between items-center gap-32 space-x-4 px-8 py-6 text-xl max-md:text-sm max-md:gap-0 max-md:px-3 max-md:py-4"
         >
 
             <Link href={"/"} className="flex gap-2 items-center font-bold">
                 <Webhook className="" />    Oxygen
             </Link>
 
-            <div className="flex gap-8 max-md:gap-3">
+            <div className="flex gap-8 max-md:gap-3 items-center">
                 {children}
             </div>
         </nav>
