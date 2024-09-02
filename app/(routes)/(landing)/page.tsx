@@ -6,6 +6,8 @@ import { UsersCount } from "./components/AvatarCircles";
 import { FeaturedProducts } from "./components/FeaturedProducts";
 import { BorderBeam } from "@/components/magicui/border-beam";
 
+export const revalidate = 0; // to make sure it's never cached
+
 export default function LandingPage() {
 
     return (

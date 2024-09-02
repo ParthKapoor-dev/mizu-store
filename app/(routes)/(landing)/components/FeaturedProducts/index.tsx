@@ -11,7 +11,7 @@ export async function FeaturedProducts({ }: FeaturedProductsProps) {
 
   const products = await getProducts({ isFeatured: true });
   console.log(products)
-  const featuredProducts : Product[] = Array(9).fill(products[0]);
+  const featuredProducts : Product[] = Array(9).fill(products[1]);
 
     return (
         <div className="flex items-center justify-between flex-wrap mx-auto px-[12vw]">
