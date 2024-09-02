@@ -6,6 +6,7 @@ import Button from "@/components/ui/button";
 import { ShoppingCart } from "lucide-react";
 import useCart from "@/hooks/use-cart";
 import { MouseEventHandler } from "react";
+import Link from "next/link";
 
 interface InfoProps {
   data: Product;
@@ -20,7 +21,7 @@ const Info: React.FC<InfoProps> = ({ data }) => {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold text-gray-900">{data.name}</h1>
+      <Link href={`/product/${data?.id}`} className="text-3xl font-bold text-gray-900">{data.name}</Link>
       <div className="mt-3 flex items-end justify-between">
         <p className="text-2xl text-gray-900">
           <Currency value={data?.price} />
@@ -30,7 +31,7 @@ const Info: React.FC<InfoProps> = ({ data }) => {
       <div className="flex flex-col gap-y-6">
         <div className="flex items-center gap-x-4">
           <h3 className="font-semibold text-black">Size:</h3>
-          <div>{data?.size?.name}</div>
+          <div className="text-black">{data?.size?.name}</div>
         </div>
         <div className="flex items-center gap-x-4">
           <h3 className="font-semibold text-black">Color:</h3>
