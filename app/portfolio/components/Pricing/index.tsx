@@ -8,8 +8,8 @@ const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
-    <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28 px-[10vw]">
-      <div className="container">
+    <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28 px-[10vw] max-md:px-[4vw]">
+      <div className="container max-md:p-0">
         <SectionTitle
           title="Simple and Affordable Pricing"
           paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."

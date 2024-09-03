@@ -8,17 +8,17 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative px-[15vw] z-10 overflow-hidden  pb-16 h-screen flex flex-col justify-center gap-16 pt-[12vh] background-half-shade "
+        className="relative px-[15vw] max-md:px-[2vw] z-10 overflow-hidden  pb-16 h-screen flex flex-col justify-center gap-16 pt-[12vh] background-half-shade "
       >
 
         <div className="container py-16 z-0 rounded-lg ">
           <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4 ">
+            <div className="w-full px-4 max-md:px-2">
               <div className="mx-auto max-w-[800px] text-center ">
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                <h1 className="mb-5 text-5xl max-md:text-2xl font-bold leading-tight text-black dark:text-white sm:leading-tight  md:leading-tight">
                   Elevate your brand with a timeless minimal logo.
                 </h1>
-                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
+                <p className="mb-12 text-xl max-md:text-base !leading-relaxed text-body-color dark:text-body-color-dark ">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                   when an unknown printer took a galley of type and scrambled it to make a type specimen book.

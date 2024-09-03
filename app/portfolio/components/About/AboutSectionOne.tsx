@@ -27,7 +27,7 @@ const AboutSectionOne = () => {
       </div> */}
 
 
-      <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28 flex mx-[15vw] justify-between mt-20">
+      <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28 flex mx-[15vw] max-md:mx-[4vw] justify-between mt-20 max-md:flex-col">
         <div className="w-full px-4 lg:w-1/2">
           <SectionTitle
             title={data.title}
@@ -39,14 +39,14 @@ const AboutSectionOne = () => {
             className="mb-12 max-w-[570px] lg:mb-0"
             data-wow-delay=".15s"
           >
-            <div className="mx-[-12px] flex flex-wrap">
-              <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
+            <div className="mx-[-12px] flex ">
+              <div className="w-full px-3 lg:w-full xl:w-1/2 max-md:flex flex-col items-center">
                 <List text="1" />
                 <List text="2" />
                 <List text="3" />
               </div>
 
-              <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
+              <div className="w-full px-3 lg:w-full xl:w-1/2">
                 <List text="4" />
                 <List text="5" />
                 <List text="6" />
@@ -55,7 +55,7 @@ const AboutSectionOne = () => {
           </div>
         </div>
 
-        <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900 h-full">
+        <BackgroundGradient className="rounded-[22px] max-w-sm p-4 max-md:p-8 sm:p-10 bg-white dark:bg-zinc-900 h-full">
           <Image
             src={`/images/skate1.jpg`}
             alt="jordans"
@@ -72,12 +72,6 @@ const AboutSectionOne = () => {
             February 17, 2024. Your best opportunity to get these right now is by
             entering raffles and waiting for the official releases.
           </p>
-          <button className="rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800">
-            <span>Buy now </span>
-            <span className="bg-zinc-700 rounded-full text-[0.6rem] px-2 py-0 text-white">
-              $100
-            </span>
-          </button>
         </BackgroundGradient>
 
       </div>
