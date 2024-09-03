@@ -1,7 +1,8 @@
-import { Testimonial } from "@/app/portfolio/types/testimonial";
+import { Testimonial } from "@/app/(portfolio)/types/testimonial";
 import SectionTitle from "../Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
 import Marquee from "@/components/magicui/marquee";
+
 
 const testimonialData: Testimonial[] = [
   {

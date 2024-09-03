@@ -1,6 +1,6 @@
 'use client';
 import { useRef, useState } from 'react';
-import { CursorElement } from '@/app/portfolio/components/ui/Cursor';
+import { CursorElement } from '@/app/(portfolio)/components/ui/Cursor';
 import { AnimatePresence, motion } from 'framer-motion';
 import { PlusIcon } from 'lucide-react';
 

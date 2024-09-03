@@ -1,4 +1,4 @@
-import { Feature } from "@/app/portfolio/types/feature";
+import { Feature } from "@/app/(portfolio)/types/feature";
 
 const featuresData: Feature[] = [
   {
