@@ -3,9 +3,9 @@ import { BackgroundGradient } from "@/components/aceternity/GlowCard";
 
 const AboutSectionTwo = () => {
   return (
-    <div className=" px-[15vw] flex justify-between py-[15vh] h-full">
+    <div className=" px-[15vw] max-md:px-[4vw] flex max-md:flex-col max-md:gap-20 justify-between py-[15vh] h-full">
 
-      <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900 h-full">
+      <BackgroundGradient className="rounded-[22px] max-w-sm p-4 max-md:p-8 sm:p-10 bg-white dark:bg-zinc-900 h-full">
         <Image
           src={`/images/shoes1.jpg`}
           alt="jordans"
@@ -22,19 +22,13 @@ const AboutSectionTwo = () => {
           February 17, 2024. Your best opportunity to get these right now is by
           entering raffles and waiting for the official releases.
         </p>
-        <button className="rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800">
-          <span>Buy now </span>
-          <span className="bg-zinc-700 rounded-full text-[0.6rem] px-2 py-0 text-white">
-            $100
-          </span>
-        </button>
       </BackgroundGradient>
 
 
       <div className="w-full px-4 lg:w-1/2">
-        <div className="max-w-[470px]">
-          <div className="mb-9">
-            <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+        <div className="max-w-[470px] max-md:text-center">
+          <div className="mb-9 ">
+            <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-">
               Lorem ipsum
             </h3>
             <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
